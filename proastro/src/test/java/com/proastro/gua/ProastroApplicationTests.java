@@ -19,7 +19,7 @@ class ProastroApplicationTests {
 	@Test
 	void testsendMail() {
 		System.out.println("Running inside test method....");
-		emailService.sendEmail("kevalborker@gmail.com", "Dummy mail from Bhupati", "Hello saroja this mail i am sending to you by my java project. whenever you see this mail just call me and tell i recived your mail.");
+		emailService.sendEmail("bhugudu8@gmail.com", "Dummy mail from Bhupati", "Hello saroja this mail i am sending to you by my java project. whenever you see this mail just call me and tell i recived your mail.");
 		System.out.println("Mail Send successfully...");
 	}
 
