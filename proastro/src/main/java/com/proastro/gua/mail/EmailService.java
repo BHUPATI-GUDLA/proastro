@@ -21,7 +21,6 @@ public class EmailService {
 			javaMailSender.send(mailMessage);
 		} catch (Exception e) {
 			System.out.println("something went wrong inside EmailService"+e);
-			System.out.println("Git configuration");
 		}
 	}
 
