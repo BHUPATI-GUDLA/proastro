@@ -1,16 +1,17 @@
 package com.proastro.gua.entities;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
 
 @Entity
-public class User {
+public class UserRecord {
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
-	private int id;
+	private long id;
 	
 	private String name;
 	
@@ -20,7 +21,7 @@ public class User {
 	
 	
 
-	public User(int id, String name, String city, String status) {
+	public UserRecord(long id, String name, String city, String status) {
 		super();
 		this.id = id;
 		this.name = name;
@@ -28,7 +29,7 @@ public class User {
 		this.status = status;
 	}
 
-	public int getId() {
+	public long getId() {
 		return id;
 	}
 
