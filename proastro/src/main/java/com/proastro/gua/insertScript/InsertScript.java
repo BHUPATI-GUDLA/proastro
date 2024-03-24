@@ -19,6 +19,10 @@ import com.proastro.gua.repo.StemsRepo;
 
 import ch.qos.logback.core.model.conditional.IfModel.BranchState;
 
+/**
+ * @author bgudla
+ * 
+ */
 @Component
 public class InsertScript {
 
