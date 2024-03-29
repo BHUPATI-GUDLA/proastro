@@ -13,11 +13,4 @@ import com.proastro.gua.repo.MasterRepo;
 @Service
 public class StemsService {
 
-	@Autowired
-	MasterRepo masterRepo;
-	
-	public Master fetchStems(String date, String month, String year) {
-		return masterRepo.findFromDateAndMonth(date, month);
-	}
-	
 }

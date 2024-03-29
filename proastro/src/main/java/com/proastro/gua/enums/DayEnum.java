@@ -5,8 +5,8 @@ public enum DayEnum {
 	Mon  ("Monday"),
 	Tue  ("Tuesday"),
 	Wed  ("Wednesday"),
-	Thur ("Thursday"),
-	Fir  ("Friday"),
+	Thu ("Thursday"),
+	Fri  ("Friday"),
 	Sat  ("Saturday"),
 	Sun  ("Sunday");
 

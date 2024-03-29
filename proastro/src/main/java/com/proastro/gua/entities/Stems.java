@@ -23,18 +23,21 @@ public class Stems {
 	private String month;
 
 	private String branch;
+	
+	private String date;
 
 	public Stems() {
 		super();
 	}
 
-	public Stems(long id, String hourRange, String stems, String month, String branch) {
+	public Stems(long id, String hourRange, String stems, String month, String branch, String date) {
 		super();
 		this.id = id;
 		this.hourRange = hourRange;
 		this.stems = stems;
 		this.month = month;
 		this.branch = branch;
+		this.date = date;
 	}
 
 	public long getId() {
@@ -77,10 +80,20 @@ public class Stems {
 		this.branch = branch;
 	}
 
+	public String getDate() {
+		return date;
+	}
+
+	public void setDate(String date) {
+		this.date = date;
+	}
+
 	@Override
 	public String toString() {
-		return "StemsTable [id=" + id + ", hourRange=" + hourRange + ", stems=" + stems + ", month=" + month
-				+ ", branch=" + branch + "]";
+		return "Stems [id=" + id + ", hourRange=" + hourRange + ", stems=" + stems + ", month=" + month + ", branch="
+				+ branch + ", date=" + date + "]";
 	}
+
+	
 
 }
