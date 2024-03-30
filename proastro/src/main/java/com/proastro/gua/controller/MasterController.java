@@ -5,7 +5,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.proastro.gua.entities.Master;
+import com.proastro.gua.pojo.Response;
 import com.proastro.gua.services.MasterService;
 
 /**
@@ -19,10 +19,10 @@ public class MasterController {
 	MasterService masterService;
 
 	@GetMapping("/my-stems")
-	public Master fetchMasterRec(@RequestParam(name = "date") String date, @RequestParam(name = "month") String month,
-			@RequestParam(name = "year") String year) {
+	public Response fetchMasterRec(@RequestParam(name = "date") String date, @RequestParam(name = "month") String month,
+			@RequestParam(name = "year") String year, @RequestParam(name = "hour") String hour) {
 		
-		return masterService.fetchMasterRec(date, month, year);
+		return masterService.fetchMasterRec(date, month, year, hour);
 	}
 
 }
