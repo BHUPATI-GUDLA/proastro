@@ -83,10 +83,7 @@ public void storeRecordInStems() {
 
 		
 		StemsRepo.saveAll(allRecords);
-		
-
-		
-		
+		System.out.println("All stems record inserted");
 	}
 
 
@@ -1612,7 +1609,7 @@ public void storeRecordInStems() {
 
 		
 		masterRepo.saveAll(masters);
-
+		System.out.println("All master record inserted");
 	}
 	
 }
