@@ -36,7 +36,51 @@ public void storeRecordInStems() {
 		Stems stems1 = new Stems(1, StemsEnum.Jia.getValue(), StemsEnum.Yi.getValue(), StemsEnum.Bing.getValue(), StemsEnum.Ding.getValue(), StemsEnum.Wu.getValue(), StemsEnum.Ji.getValue(), StemsEnum.Geng.getValue(),
 				StemsEnum.Xin.getValue(), StemsEnum.Ren.getValue(), StemsEnum.Gui.getValue(), StemsEnum.Jia.getValue(), StemsEnum.Yi.getValue(), StemsEnum.Bing.getValue(),StemsEnum.Jia.getValue());
 		
+		//乙  Yi	丙  Bing	丁  Ding	戊  Wu	己  Ji	庚  Geng	辛  Xin	壬  Ren	癸  Gui	甲  Jia	乙  Yi	丙  Bing	丁  Ding	戊  Wu
+		Stems stems2 = new Stems(1, StemsEnum.Bing.getValue(), StemsEnum.Ding.getValue(), StemsEnum.Wu.getValue(), StemsEnum.Ji.getValue(), StemsEnum.Geng.getValue(), StemsEnum.Xin.getValue(),
+				StemsEnum.Ren.getValue(), StemsEnum.Gui.getValue(), StemsEnum.Jia.getValue(), StemsEnum.Yi.getValue(), StemsEnum.Bing.getValue(), StemsEnum.Ding.getValue(), StemsEnum.Wu.getValue(), StemsEnum.Yi.getValue());
+		
+		//丙  Bing	戊  Wu	己  Ji	庚  Geng	辛  Xin	壬  Ren	癸  Gui	甲  Jia	乙  Yi	丙  Bing	丁  Ding	戊  Wu	己  Ji	庚  Geng
+		Stems stems3 = new Stems(1, StemsEnum.Wu.getValue(), StemsEnum.Ji.getValue(), StemsEnum.Geng.getValue(), StemsEnum.Xin.getValue(), StemsEnum.Ren.getValue(), StemsEnum.Gui.getValue(),
+				StemsEnum.Jia.getValue(), StemsEnum.Yi.getValue(), StemsEnum.Bing.getValue(), StemsEnum.Ding.getValue(), StemsEnum.Wu.getValue(), StemsEnum.Ji.getValue(), StemsEnum.Geng.getValue(), StemsEnum.Bing.getValue());
+		
+		//丁  Ding	庚  Geng	辛  Xin	壬  Ren	癸  Gui	甲  Jia	乙  Yi	丙  Bing	丁  Ding	戊  Wu	己  Ji	庚  Geng	辛  Xin	壬  Ren
+		Stems stems4 = new Stems(1,StemsEnum.Geng.getValue(), StemsEnum.Xin.getValue(), StemsEnum.Ren.getValue(), StemsEnum.Gui.getValue(), StemsEnum.Jia.getValue(), StemsEnum.Yi.getValue(),
+				StemsEnum.Bing.getValue(), StemsEnum.Ding.getValue(), StemsEnum.Wu.getValue(), StemsEnum.Ji.getValue(), StemsEnum.Geng.getValue(), StemsEnum.Xin.getValue(), StemsEnum.Ren.getValue(), StemsEnum.Ding.getValue());
+		//戊  Wu	壬  Ren	癸  Gui	甲  Jia	乙  Yi	丙  Bing	丁  Ding	戊  Wu	己  Ji	庚  Geng	辛  Xin	壬  Ren	癸  Gui	甲  Jia
+		Stems stems5= new Stems(1,StemsEnum.Ren.getValue(), StemsEnum.Gui.getValue(), StemsEnum.Jia.getValue(), StemsEnum.Yi.getValue(), StemsEnum.Bing.getValue(), StemsEnum.Ding.getValue(),
+				StemsEnum.Wu.getValue(), StemsEnum.Ji.getValue(), StemsEnum.Geng.getValue(), StemsEnum.Xin.getValue(), StemsEnum.Ren.getValue(), StemsEnum.Gui.getValue(), StemsEnum.Jia.getValue(), StemsEnum.Wu.getValue());
+		
+		//己  Ji	甲  Jia	乙  Yi	丙  Bing	丁  Ding	戊  Wu	己  Ji	庚  Geng	辛  Xin	壬  Ren	癸  Gui	甲  Jia	乙  Yi	丙  Bing
+		Stems stems6 = new Stems(1, StemsEnum.Jia.getValue(), StemsEnum.Yi.getValue(), StemsEnum.Bing.getValue(), StemsEnum.Ding.getValue(), StemsEnum.Wu.getValue(), StemsEnum.Ji.getValue(),
+				StemsEnum.Geng.getValue(), StemsEnum.Xin.getValue(), StemsEnum.Ren.getValue(), StemsEnum.Gui.getValue(), StemsEnum.Jia.getValue(), StemsEnum.Yi.getValue(), StemsEnum.Bing.getValue(), StemsEnum.Ji.getValue());
+		//庚  Geng	丙  Bing	丁  Ding	戊  Wu	己  Ji	庚  Geng	辛  Xin	壬  Ren	癸  Gui	甲  Jia	乙  Yi	丙  Bing	丁  Ding	戊  Wu
+		Stems stems7 = new Stems(1, StemsEnum.Bing.getValue(), StemsEnum.Ding.getValue(), StemsEnum.Wu.getValue(), StemsEnum.Ji.getValue(), StemsEnum.Geng.getValue(), StemsEnum.Xin.getValue(),
+				StemsEnum.Ren.getValue(), StemsEnum.Gui.getValue(), StemsEnum.Jia.getValue(), StemsEnum.Yi.getValue(), StemsEnum.Bing.getValue(), StemsEnum.Ding.getValue(), StemsEnum.Wu.getValue(), StemsEnum.Geng.getValue());
+		
+		//辛  Xin	戊  Wu	己  Ji	庚  Geng	辛  Xin	壬  Ren	癸  Gui	甲  Jia	乙  Yi	丙  Bing	丁  Ding	戊  Wu	己  Ji	庚  Geng
+		Stems stems8 = new Stems(1, StemsEnum.Wu.getValue(), StemsEnum.Ji.getValue(), StemsEnum.Geng.getValue(), StemsEnum.Xin.getValue(), StemsEnum.Ren.getValue(), StemsEnum.Gui.getValue(),
+				StemsEnum.Jia.getValue(), StemsEnum.Yi.getValue(), StemsEnum.Bing.getValue(), StemsEnum.Ding.getValue(), StemsEnum.Wu.getValue(), StemsEnum.Ji.getValue(), StemsEnum.Geng.getValue(), StemsEnum.Xin.getValue());
+		
+		//壬  Ren	庚  Geng	辛  Xin	壬  Ren	癸  Gui	甲  Jia	乙  Yi	丙  Bing	丁  Ding	戊  Wu	己  Ji	庚  Geng	辛  Xin	壬  Ren
+		Stems stems9 = new Stems(1, StemsEnum.Geng.getValue(), StemsEnum.Xin.getValue(), StemsEnum.Xin.getValue(), StemsEnum.Ren.getValue(), StemsEnum.Gui.getValue(), StemsEnum.Jia.getValue(),
+				StemsEnum.Yi.getValue(), StemsEnum.Bing.getValue(), StemsEnum.Ding.getValue(), StemsEnum.Ji.getValue(), StemsEnum.Geng.getValue(), StemsEnum.Xin.getValue(), StemsEnum.Ren.getValue(),StemsEnum.Ren.getValue());
+		
+		//癸  Gui	壬  Ren	癸  Gui	甲  Jia	乙  Yi	丙  Bing	丁  Ding	戊  Wu	己  Ji	庚  Geng	辛  Xin	壬  Ren	癸  Gui	甲  Jia
+		Stems stems10 = new Stems(1, StemsEnum.Ren.getValue(), StemsEnum.Gui.getValue(), StemsEnum.Jia.getValue(), StemsEnum.Yi.getValue(), StemsEnum.Bing.getValue(), StemsEnum.Ding.getValue(),
+				StemsEnum.Wu.getValue(), StemsEnum.Ji.getValue(), StemsEnum.Geng.getValue(), StemsEnum.Xin.getValue(), StemsEnum.Ren.getValue(), StemsEnum.Gui.getValue(), StemsEnum.Jia.getValue(), StemsEnum.Gui.getValue());
+
 		allRecords.add(stems1);
+		allRecords.add(stems2);
+		allRecords.add(stems3);
+		allRecords.add(stems4);
+		allRecords.add(stems5);
+		allRecords.add(stems6);
+		allRecords.add(stems7);
+		allRecords.add(stems8);
+		allRecords.add(stems9);
+		allRecords.add(stems10);
+
 		
 		StemsRepo.saveAll(allRecords);
 		

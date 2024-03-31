@@ -24,5 +24,12 @@ public class MasterController {
 		
 		return masterService.fetchMasterRec(date, month, year, hour);
 	}
+	
+	
+	@GetMapping("/demo-api")
+	public String testApi() {
+		System.out.println("APPLICATION IS STARTED");
+		return "Application is working";
+	}
 
 }
