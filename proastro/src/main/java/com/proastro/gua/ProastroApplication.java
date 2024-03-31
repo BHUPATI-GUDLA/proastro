@@ -22,8 +22,8 @@ public class ProastroApplication implements CommandLineRunner {
 	@Override
 	public void run(String... args) throws Exception {
 		
-//		insertScript.storeRecordInStems();
-//		insertScript.storeRecordInMaster();
+		insertScript.storeRecordInStems();
+		insertScript.storeRecordInMaster();
 		System.out.println("ALL DATA IS STORED...");
 	}
 

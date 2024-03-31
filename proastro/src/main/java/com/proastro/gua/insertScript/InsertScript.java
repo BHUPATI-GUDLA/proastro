@@ -29,17 +29,14 @@ public class InsertScript {
 	@Autowired
 	MasterRepo masterRepo;
 	
-	public void storeRecordInStems() {
+public void storeRecordInStems() {
 		
 		List<Stems> allRecords = new ArrayList<>();
-		
 
 		Stems stems1 = new Stems(1, StemsEnum.Jia.getValue(), StemsEnum.Yi.getValue(), StemsEnum.Bing.getValue(), StemsEnum.Ding.getValue(), StemsEnum.Wu.getValue(), StemsEnum.Ji.getValue(), StemsEnum.Geng.getValue(),
-				StemsEnum.Xin.getValue(), StemsEnum.Ren.getValue(), StemsEnum.Gui.getValue(), StemsEnum.Jia.getValue(), StemsEnum.Yi.getValue(), StemsEnum.Bing.getValue(), StemsEnum.Jia.getValue());
-		// write
+				StemsEnum.Xin.getValue(), StemsEnum.Ren.getValue(), StemsEnum.Gui.getValue(), StemsEnum.Jia.getValue(), StemsEnum.Yi.getValue(), StemsEnum.Bing.getValue(),StemsEnum.Jia.getValue());
 		
 		allRecords.add(stems1);
-		
 		
 		StemsRepo.saveAll(allRecords);
 		
@@ -47,6 +44,9 @@ public class InsertScript {
 		
 		
 	}
+
+
+
 	
 	public void storeRecordInMaster() {
 		
